@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Clicker Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>📚 School Clicker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>📚 School Clicker</h1>
 
   <div class="game-container">
-    <!-- Left side -->
+    <!-- Left panel: gameplay -->
     <div class="left-panel">
       <div class="stats">
         <p>Good Points (GP): <span id="gp">0</span></p>
         <p>Bad Points (BP): <span id="bp">0</span></p>
         <p>GP per second: <span id="gps">0</span></p>
         <p>BP per second: <span id="bps">0</span></p>
-        <p>Detention Level: <span id="detention">0</span>%</p>
+        <p>Merit: <span id="merit">0</span>%</p>
+        <p>Detention: <span id="detention">0</span>%</p>
         <p id="event-countdown">⏳ Next Event: ...</p>
       </div>
 
@@ -29,7 +30,7 @@
       <div class="console" id="console"></div>
     </div>
 
-    <!-- Right side -->
+    <!-- Right panel: shop -->
     <div class="right-panel">
       <h2>🛒 Buyables</h2>
       <div class="shop">
