@@ -7,37 +7,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>School Clicker Game</h1>
-  
-  <div class="stats">
-    <p>Good Points (GP): <span id="gp">0</span></p>
-    <p>Bad Points (BP): <span id="bp">0</span></p>
-    <p>Merit: <span id="merit">0%</span></p>
-    <p>Detention: <span id="detention">0%</span></p>
-    <p>GP/s: <span id="gps">0</span> | BP/s: <span id="bps">0</span></p>
-  </div>
+  <h1>📚 School Clicker</h1>
 
-  <div class="buttons">
-    <button onclick="doGoodWork()">Do Good Work</button>
-    <button onclick="doBadWork()">Do Bad Work</button>
-  </div>
+  <div class="game-container">
+    <!-- Left side -->
+    <div class="left-panel">
+      <div class="stats">
+        <p>Good Points (GP): <span id="gp">0</span></p>
+        <p>Bad Points (BP): <span id="bp">0</span></p>
+        <p>GP per second: <span id="gps">0</span></p>
+        <p>BP per second: <span id="bps">0</span></p>
+        <p>Detention Level: <span id="detention">0</span>%</p>
+        <p id="event-countdown">⏳ Next Event: ...</p>
+      </div>
 
-  <div id="buyables">
-    <h2>Good Work Buyables</h2>
-    <div id="good-buyables"></div>
-    
-    <h2>Bad Work Buyables</h2>
-    <div id="bad-buyables"></div>
-  </div>
+      <div class="actions">
+        <button id="goodBtn">Do Good Work (+1 GP)</button>
+        <button id="badBtn">Mess About (+1 BP)</button>
+      </div>
 
-  <div id="event-box">
-    <h2>Next Event</h2>
-    <p id="event-timer">⏳ Loading...</p>
-  </div>
+      <div class="console" id="console"></div>
+    </div>
 
-  <div id="console">
-    <h2>Console</h2>
-    <div id="log"></div>
+    <!-- Right side -->
+    <div class="right-panel">
+      <h2>🛒 Buyables</h2>
+      <div class="shop">
+        <h3>Good Buyables</h3>
+        <div id="good-shop"></div>
+
+        <h3>Bad Buyables</h3>
+        <div id="bad-shop"></div>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
