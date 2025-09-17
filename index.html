@@ -12,8 +12,10 @@
   <button onclick="doBadWork()">Do Bad Work</button>
 
   <div id="stats">
-    <p>Good Points: <span id="goodPoints">0</span></p>
-    <p>Bad Points: <span id="badPoints">0</span></p>
+    <p>Good Points: <span id="goodPoints">0</span> 
+       (GP/s: <span id="goodRateDisplay">0</span>)</p>
+    <p>Bad Points: <span id="badPoints">0</span> 
+       (BP/s: <span id="badRateDisplay">0</span>)</p>
   </div>
 
   <h2>Progress</h2>
@@ -28,12 +30,18 @@
   </div>
 
   <h2>Upgrades</h2>
-  <button onclick="buyUpgrade('good')" id="goodUpgrade">
-    Buy Homework Machine (Cost: 10 GP)
-  </button>
-  <button onclick="buyUpgrade('bad')" id="badUpgrade">
-    Buy Cheat Sheet (Cost: 10 BP)
-  </button>
+  <div id="upgrades">
+    <button onclick="buyUpgrade('good1')">Homework Machine (10 GP)</button>
+    <button onclick="buyUpgrade('good2')">Study Group (50 GP)</button>
+    <button onclick="buyUpgrade('good3')">Star Pupil (200 GP)</button>
+    <br>
+    <button onclick="buyUpgrade('bad1')">Cheat Sheet (10 BP)</button>
+    <button onclick="buyUpgrade('bad2')">Phone Under Desk (50 BP)</button>
+    <button onclick="buyUpgrade('bad3')">Class Clown Club (200 BP)</button>
+  </div>
+
+  <h2>Console</h2>
+  <div id="consoleBox"></div>
 
   <script src="script.js"></script>
 </body>
