@@ -1,52 +1,40 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 20px;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.stats, .buttons, #buyables, #event-box, #console {
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  max-width: 600px;
+  background: #fff;
 }
 
 button {
-  margin: 10px;
+  margin: 5px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-#stats {
-  margin-top: 20px;
-}
-
-.bar-container {
-  width: 80%;
-  background: #ddd;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  margin: 10px auto;
-  height: 20px;
-}
-
-.bar {
-  height: 100%;
-  width: 0%;
-  border-radius: 5px;
-}
-
-.merit {
-  background: limegreen;
-}
-
-.detention {
-  background: crimson;
-}
-
-#consoleBox {
+#console {
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
   background: #111;
   color: #0f0;
   font-family: monospace;
-  text-align: left;
-  padding: 10px;
-  margin: 20px auto;
-  width: 80%;
-  height: 150px;
-  overflow-y: auto;
-  border-radius: 5px;
+}
+
+#event-timer {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.buyable {
+  margin: 10px 0;
 }
