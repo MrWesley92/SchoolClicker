@@ -37,3 +37,16 @@ button {
 .detention {
   background: crimson;
 }
+
+#consoleBox {
+  background: #111;
+  color: #0f0;
+  font-family: monospace;
+  text-align: left;
+  padding: 10px;
+  margin: 20px auto;
+  width: 80%;
+  height: 150px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
