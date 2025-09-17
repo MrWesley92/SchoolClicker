@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>School Clicker</h1>
+
+  <button onclick="doGoodWork()">Do Good Work</button>
+  <button onclick="doBadWork()">Do Bad Work</button>
+
+  <div id="stats">
+    <p>Good Points: <span id="goodPoints">0</span></p>
+    <p>Bad Points: <span id="badPoints">0</span></p>
+  </div>
+
+  <h2>Upgrades</h2>
+  <button onclick="buyUpgrade('good')" id="goodUpgrade">
+    Buy Homework Machine (Cost: 10 GP)
+  </button>
+  <button onclick="buyUpgrade('bad')" id="badUpgrade">
+    Buy Cheat Sheet (Cost: 10 BP)
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
