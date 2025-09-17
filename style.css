@@ -14,3 +14,26 @@ button {
 #stats {
   margin-top: 20px;
 }
+
+.bar-container {
+  width: 80%;
+  background: #ddd;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin: 10px auto;
+  height: 20px;
+}
+
+.bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+}
+
+.merit {
+  background: limegreen;
+}
+
+.detention {
+  background: crimson;
+}
